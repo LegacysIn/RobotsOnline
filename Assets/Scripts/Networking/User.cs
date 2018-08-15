@@ -8,7 +8,7 @@ public class User : MonoBehaviour
 
     public bool isPlayer = false;
     public bool InGame = false;
-    bool IsGrounded = false;
+   // bool IsGrounded = false;
     public Vector3 pos;
    
 
