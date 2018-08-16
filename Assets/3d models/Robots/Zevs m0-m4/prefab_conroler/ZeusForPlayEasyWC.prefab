@@ -445,6 +445,7 @@ GameObject:
   - component: {fileID: 4828600519967822}
   - component: {fileID: 54613594424919030}
   - component: {fileID: 114755387510680964}
+  - component: {fileID: 65312493298470336}
   m_Layer: 0
   m_Name: ZeusForPlayEasyWC
   m_TagString: Player
@@ -2633,6 +2634,18 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300002, guid: d1ec11e4e95f6da4b96fb34226a0d718, type: 3}
+--- !u!65 &65312493298470336
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1600885495192968}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!81 &81965110731538682
 AudioListener:
   m_ObjectHideFlags: 1
@@ -2714,6 +2727,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dSpeed: 2
   tSpeed: 80
+  angleReg: 0
   LTrack: {fileID: 1450886089266434}
   RTrack: {fileID: 1235254197401812}
 --- !u!124 &124429037589856418

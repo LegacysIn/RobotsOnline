@@ -12,6 +12,8 @@ public class EasyWC : MonoBehaviour {
     public float dSpeed = 2;
     [Tooltip("Скорость поворота")]
     public float tSpeed = 80;
+
+    public float angleReg;
     Rigidbody rb;
     BoxCollider GroundChecker;
     bool Grounded = false;
@@ -73,8 +75,8 @@ public class EasyWC : MonoBehaviour {
             {
                 //Forward
                 rb.MovePosition(rb.position + velocity * Time.fixedDeltaTime);
-
-                //Wheels
+                rb.AddForce(transform.forward * angleReg);
+                
               
 
                 //LeftTracks
